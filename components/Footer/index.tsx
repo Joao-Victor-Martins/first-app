@@ -1,10 +1,18 @@
 
-import { StyleSheet ,View, Text } from "react-native"
+import { StyleSheet ,View, Text, TouchableOpacity, Linking } from "react-native"
 
 export default function Footer() {
+
+    const openInstagram = () => {
+        Linking.openURL('https://www.instagram.com/sargentojojo')
+        .catch(err => console.error('Failed to open instagram', err));
+    }
+
     return (
         <View style={styles.container_footer}>
+            <TouchableOpacity onPress={openInstagram}>
             <Text style={styles.text_footer}>Desenvolvido por CyberTech</Text>
+            </TouchableOpacity>
         </View>
     )
 }
