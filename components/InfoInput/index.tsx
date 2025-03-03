@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     },
 
     inputNota: {
-        width: "45%",
+        width: "38%",
         height: 65,
         borderWidth: 1,
         borderColor: "green",
@@ -134,7 +134,8 @@ const styles = StyleSheet.create({
     },
 
     container_interno: {
-        width: "80%",
+        maxWidth: "100%",
+        width: "100%",
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
